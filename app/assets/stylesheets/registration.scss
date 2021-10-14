@@ -1,8 +1,13 @@
-main.container {
-  div.registration {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
+#new_user,
+.login form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+  width: 50%;
+
+  input {
+    margin-top: 5px;
+    margin-bottom: 5px
   }
 }
