@@ -121,5 +121,58 @@ RSpec.describe User, type: :model do
   end
 
   describe ".authenticate_with_credentials" do
+
+    it "should return a User instance when credentials are authenitcated" do
+      @user = User.new(
+        name: "Joe Bloe",
+        email: "joe@bloe.ca",
+        password: "password",
+        password_confirmation: "password"
+      )
+
+      @user.save!
+
+      expect(@user).to eq(User.authenticate_with_credentials("joe@bloe.ca", "password"))
+    end
+
+    it "should authenticate email regardless of case or leading/trailing white space" do
+      @user = User.new(
+        name: "Joe Bloe",
+        email: "joe@bloe.ca",
+        password: "password",
+        password_confirmation: "password"
+      )
+
+      @user.save!
+
+      expect(@user).to eq(User.authenticate_with_credentials("  JOE@bloe.ca  ", "password"))
+    end
+
+    it "should fail authentication when given the wrong email" do
+      @user = User.new(
+        name: "Joe Bloe",
+        email: "joe@bloe.ca",
+        password: "password",
+        password_confirmation: "password"
+      )
+
+      @user.save!
+
+      expect(User.authenticate_with_credentials("joseph@bloe.ca", "notpassword")).to eq(nil)
+    end
+
+    it "should fail authentication when given the wrong password" do
+      @user = User.new(
+        name: "Joe Bloe",
+        email: "joe@bloe.ca",
+        password: "password",
+        password_confirmation: "password"
+      )
+
+      @user.save!
+
+      expect(User.authenticate_with_credentials("joe@bloe.ca", "notpassword")).to eq(nil)
+    end
+
   end
 end
