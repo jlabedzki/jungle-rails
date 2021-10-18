@@ -17,7 +17,7 @@ RSpec.feature "Visitor navigates to home page", type: :feature, js: true do
 
   end
 
-  scenario "They click on the first product's 'Details' button" do
+  scenario "User clicks 'Add to cart' on product and My Cart incrememnts by 1" do
     # ACT
     visit root_path
 
