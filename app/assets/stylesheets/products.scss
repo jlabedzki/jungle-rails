@@ -71,6 +71,10 @@ main section.categories-show {
         }
       }
 
+      .checked {
+        color: orange;
+      }
+
     }
   }
 }
@@ -81,6 +85,10 @@ main section.products-show {
     img.main-img {
       max-width: 100%;
     }
+  }
+
+  .checked {
+    color: orange;
   }
 }
 

@@ -25,7 +25,7 @@ class Product < ActiveRecord::Base
     self.reviews.each { |review| ratings.push(review[:rating])}
     total_rating = ratings.reduce(0) { |sum, num| sum + num }
 
-    total_rating.to_f/num_reviews
+    (total_rating.to_f/num_reviews).round(1)
   end
 
 end
