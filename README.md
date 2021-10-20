@@ -6,7 +6,7 @@ A mini e-commerce application built with Rails 4.2 for purposes of teaching Rail
 
 BEWARE: This application was built as a part of my studies at Lighthouse Labs and is NOT intended as production grade software.
 
-The purpose of this project was to simulate what it's like to inherit a codebase in an unfamiliar language. We learned Ruby on Rails at an accelerated pace to be able to add features and fix bugs on the existing codebase.
+The purpose of this project was to simulate what it's like to inherit a codebase in an unfamiliar language. We learned Ruby on Rails at an accelerated pace to be able to add features and fix bugs on the existing codebase. As such, not all features are fully completed.
 
 ## Features
 Visitors can:
@@ -22,12 +22,15 @@ Logged in users can (in addition to visitor features):
 Admins can:
 - Create product categories
 - Create or delete a product
-- Create a sale for products with a start and end date
 - Visit a dashboard which displays the number of products and categories
 
 ## Final Product
 
-screenshots
+!["Homepage"](https://github.com/jlabedzki/jungle-rails/blob/master/screenshots/Screen%20Shot%202021-10-20%20at%2011.17.59%20AM.png?raw=true)
+!["Cart"](https://github.com/jlabedzki/jungle-rails/blob/master/screenshots/Screen%20Shot%202021-10-20%20at%2011.18.20%20AM.png?raw=true)
+!["Successful order"](https://github.com/jlabedzki/jungle-rails/blob/master/screenshots/Screen%20Shot%202021-10-20%20at%2011.18.41%20AM.png?raw=true)
+!["Admin products"](https://github.com/jlabedzki/jungle-rails/blob/master/screenshots/Screen%20Shot%202021-10-20%20at%2011.18.53%20AM.png?raw=true)
+!["Admin categories"](https://github.com/jlabedzki/jungle-rails/blob/master/screenshots/Screen%20Shot%202021-10-20%20at%2011.19.02%20AM.png?raw=true)
 
 ## Setup
 
